@@ -18,6 +18,7 @@ build/
 *.pyo
 *.pyd
 *.pdb
+
 # Virtual environments
 venv/
 Vriksh/        # ignore your custom virtual env folder

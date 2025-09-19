@@ -1,8 +1,8 @@
-# PhytoSense: Crop Disease Detection System
+# VrikshVed: Crop Disease Detection System
 
 ## Overview
 
-PhytoSense is an innovative deep learning-based system designed to assist farmers, agricultural researchers, and enthusiasts in the early and accurate detection of crop diseases. Leveraging advanced neural networks, PhytoSense analyzes plant images to identify various pathological conditions, providing timely insights that can help mitigate crop loss and promote healthier agricultural practices.
+VrikshVed is an innovative deep learning-based system designed to assist farmers, agricultural researchers, and enthusiasts in the early and accurate detection of crop diseases. Leveraging advanced neural networks, VrikshVed analyzes plant images to identify various pathological conditions, providing timely insights that can help mitigate crop loss and promote healthier agricultural practices.
 
 The project encompasses a full-stack application, integrating a robust machine learning backend with an intuitive web-based frontend, making sophisticated disease detection accessible to a wide audience.
 
@@ -16,7 +16,7 @@ The project encompasses a full-stack application, integrating a robust machine l
 
 ## Technical Stack
 
-The PhytoSense project is built using a modern and robust technical stack:
+The VrikshVed project is built using a modern and robust technical stack:
 
 - **Core Language:** Python
 - **Deep Learning Framework:** PyTorch (for model development, training, and inference)
@@ -27,13 +27,13 @@ The PhytoSense project is built using a modern and robust technical stack:
 ## Project Structure
 
 ```
-PhytoSense/
+VrikshVed/
 ├── backend/                  # Server-side application logic and API endpoints
 ├── frontend/                 # Client-side user interface and assets
-├── PhytoSense.ipynb          # Jupyter Notebook for ML model development, training, and evaluation
+├── VrikshVed.ipynb          # Jupyter Notebook for ML model development, training, and evaluation
 ├── phyto_sense.py            # Core Python script containing the deep learning model's logic
-├── phytoSense.pth            # Trained PyTorch model weights and architecture
-├── PhytoSenseModelPDF.pdf    # Detailed documentation of the deep learning model
+├── VrikshVed.pth            # Trained PyTorch model weights and architecture
+├── VrikshVedModelPDF.pdf    # Detailed documentation of the deep learning model
 ├── datasetInfo.txt           # Information about the dataset used for training
 ├── app.py                    # Main entry point for the backend web application
 └── README.md                 # Project overview and documentation
@@ -42,22 +42,22 @@ PhytoSense/
 ## Workflow Overview
 
 1. **Data Preparation:** The `datasetInfo.txt` file outlines the specifics of the crop disease image dataset, including its source, structure, and any preprocessing steps.
-2. **Model Development & Training:** `PhytoSense.ipynb` serves as the interactive environment where the deep learning neural network is designed, trained on the crop disease dataset, and evaluated.
+2. **Model Development & Training:** `VrikshVed.ipynb` serves as the interactive environment where the deep learning neural network is designed, trained on the crop disease dataset, and evaluated.
 3. **Core Model Logic:** The refined and production-ready architecture and inference functions of the crop disease detection model are encapsulated in `phyto_sense.py`.
-4. **Model Persistence:** The trained weights and architecture of the PyTorch model are saved as `phytoSense.pth`, ready for deployment and inference without retraining.
-5. **Model Documentation:** `PhytoSenseModelPDF.pdf` provides a comprehensive technical deep dive into the model's design, training methodology, and performance analysis.
-6. **Backend Application:** The `backend/` directory, with `app.py` as its main entry point, handles API requests from the frontend, loads the `phytoSense.pth` model, and performs disease inference.
+4. **Model Persistence:** The trained weights and architecture of the PyTorch model are saved as `VrikshVed.pth`, ready for deployment and inference without retraining.
+5. **Model Documentation:** `VrikshVedModelPDF.pdf` provides a comprehensive technical deep dive into the model's design, training methodology, and performance analysis.
+6. **Backend Application:** The `backend/` directory, with `app.py` as its main entry point, handles API requests from the frontend, loads the `VrikshVed.pth` model, and performs disease inference.
 7. **Frontend Application:** The `frontend/` directory contains the user interface, allowing users to upload plant images and visualize the disease detection results.
-8. **End-to-End System Workflow:** Users interact with the frontend, which sends image data to the backend via API calls. The backend utilizes the `phytoSense.pth` model (via `phyto_sense.py`) to detect diseases and returns the results to the frontend for display.
+8. **End-to-End System Workflow:** Users interact with the frontend, which sends image data to the backend via API calls. The backend utilizes the `VrikshVed.pth` model (via `phyto_sense.py`) to detect diseases and returns the results to the frontend for display.
 
 ## Setup and Installation
 
-To set up the PhytoSense project locally, follow these steps:
+To set up the VrikshVed project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/adityaxanand/PhytoSense.git
-    cd PhytoSense
+    git clone https://github.com/adityaxanand/VrikshVed.git
+    cd VrikshVed
     ```
 2. **Set up Python environment:**
     ```bash
@@ -84,7 +84,7 @@ Once the application is running:
 
 ## Interactive Demo
 
-Experience the PhytoSense model in action through its interactive online demonstration:  
+Experience the VrikshVed model in action through its interactive online demonstration:  
 [https://online.fliphtml5.com/rqfhm/vngn/](https://online.fliphtml5.com/rqfhm/vngn/)
 
 ## Model Documentation
@@ -94,7 +94,7 @@ Get the model PDF here:
 
 ## Contributing
 
-We welcome contributions to the PhytoSense project! Please refer to our `CONTRIBUTING.md` (if available) for guidelines on how to submit issues, pull requests, and contribute to the development.
+We welcome contributions to the VrikshVed project! Please refer to our `CONTRIBUTING.md` (if available) for guidelines on how to submit issues, pull requests, and contribute to the development.
 
 ## License
 
