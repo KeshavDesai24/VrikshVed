@@ -952,7 +952,7 @@ from tqdm.notebook import tqdm
 
 !pip install jovian --upgrade --quiet
 
-project_name = 'phytosense'
+project_name = 'VrikshVed'
 
 import os
 import shutil
@@ -1580,7 +1580,7 @@ plt.xlim([0.0, 1.0])
 plt.ylim([0.0, 1.05])
 plt.xlabel('False Positive Rate', fontsize=14)
 plt.ylabel('True Positive Rate', fontsize=14)
-plt.title('Phytosense: Receiver Operating Characteristic (ROC) Curve', fontsize=16)
+plt.title('VrikshVed: Receiver Operating Characteristic (ROC) Curve', fontsize=16)
 plt.legend(loc="lower right", fontsize=12)
 plt.grid(True)
 plt.show()
@@ -1637,7 +1637,7 @@ plt.xlim([0.0, 1.0])
 plt.ylim([0.0, 1.05])
 plt.xlabel('False Positive Rate', fontsize=14)
 plt.ylabel('True Positive Rate', fontsize=14)
-plt.title('Phytosense: Receiver Operating Characteristic (ROC) Curve', fontsize=16)
+plt.title('VrikshVed: Receiver Operating Characteristic (ROC) Curve', fontsize=16)
 plt.legend(loc="lower right", fontsize=12)
 plt.grid(True)
 plt.show()
@@ -1651,7 +1651,7 @@ val_accuracies = [entry['val_acc'] for entry in history]
 plt.figure(figsize=(10, 6))
 plt.plot(train_losses, label='Training Loss', marker='o', linestyle='-')
 plt.plot(val_losses, label='Validation Loss', marker='x', linestyle='--')
-plt.title('Phytosense: Model Loss', fontsize=16)
+plt.title('VrikshVed: Model Loss', fontsize=16)
 plt.xlabel('Epoch', fontsize=14)
 plt.ylabel('Loss', fontsize=14)
 plt.legend(loc='upper left', fontsize=12)
@@ -1661,7 +1661,7 @@ plt.show()
 # Plot Validation Accuracy curve (if you later compute training accuracy, you can add that curve as well)
 plt.figure(figsize=(10, 6))
 plt.plot(val_accuracies, label='Validation Accuracy', marker='o', linestyle='-')
-plt.title('Phytosense: Model Accuracy', fontsize=16)
+plt.title('VrikshVed: Model Accuracy', fontsize=16)
 plt.xlabel('Epoch', fontsize=14)
 plt.ylabel('Accuracy', fontsize=14)
 plt.legend(loc='upper left', fontsize=12)
@@ -1719,7 +1719,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
@@ -1986,7 +1986,7 @@ def plot_loss_curves(history, test_loss_value):
     plt.plot(test_losses, label='Testing Loss', color='green', linewidth=2, marker='s')
 
     # Title and labels
-    plt.title('Phytosense: Loss vs. Epoch', fontsize=20, fontweight='bold')
+    plt.title('VrikshVed: Loss vs. Epoch', fontsize=20, fontweight='bold')
     plt.xlabel('Epoch', fontsize=16)
     plt.ylabel('Loss', fontsize=16)
 
@@ -2363,7 +2363,7 @@ val_accuracies = [entry['val_acc'] for entry in history]
 plt.figure(figsize=(10, 6))
 plt.plot(train_losses, label='Training Loss', marker='o', linestyle='-')
 plt.plot(val_losses, label='Validation Loss', marker='x', linestyle='--')
-plt.title('Phytosense: Model Loss', fontsize=16)
+plt.title('VrikshVed: Model Loss', fontsize=16)
 plt.xlabel('Epoch', fontsize=14)
 plt.ylabel('Loss', fontsize=14)
 plt.legend(loc='upper left', fontsize=12)
@@ -2373,7 +2373,7 @@ plt.show()
 # Plot Validation Accuracy curve (if you later compute training accuracy, you can add that curve as well)
 plt.figure(figsize=(10, 6))
 plt.plot(val_accuracies, label='Validation Accuracy', marker='o', linestyle='-')
-plt.title('Phytosense: Model Accuracy', fontsize=16)
+plt.title('VrikshVed: Model Accuracy', fontsize=16)
 plt.xlabel('Epoch', fontsize=14)
 plt.ylabel('Accuracy', fontsize=14)
 plt.legend(loc='upper left', fontsize=12)
@@ -2431,7 +2431,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
@@ -2589,7 +2589,7 @@ def plot_loss_curves(history, test_loss_value):
     plt.plot(test_losses, label='Testing Loss', color='green', linewidth=2, marker='s')
 
     # Title and labels
-    plt.title('Phytosense: Loss vs. Epoch', fontsize=20, fontweight='bold')
+    plt.title('VrikshVed: Loss vs. Epoch', fontsize=20, fontweight='bold')
     plt.xlabel('Epoch', fontsize=16)
     plt.ylabel('Loss', fontsize=16)
 
@@ -2882,7 +2882,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
@@ -3141,7 +3141,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
@@ -3408,7 +3408,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
@@ -3536,7 +3536,7 @@ def plot_loss_curves(history, test_loss_value):
     plt.plot(test_losses, label='Testing Loss', color='green', linewidth=2, marker='s')
 
     # Title and labels
-    plt.title('Phytosense: Loss vs. Epoch', fontsize=20, fontweight='bold')
+    plt.title('VrikshVed: Loss vs. Epoch', fontsize=20, fontweight='bold')
     plt.xlabel('Epoch', fontsize=16)
     plt.ylabel('Loss', fontsize=16)
 
@@ -3795,7 +3795,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
@@ -3922,7 +3922,7 @@ def plot_loss_curves(history, test_loss_value):
     plt.plot(test_losses, label='Testing Loss', color='green', linewidth=2, marker='s')
 
     # Title and labels
-    plt.title('Phytosense: Loss vs. Epoch', fontsize=20, fontweight='bold')
+    plt.title('VrikshVed: Loss vs. Epoch', fontsize=20, fontweight='bold')
     plt.xlabel('Epoch', fontsize=16)
     plt.ylabel('Loss', fontsize=16)
 
@@ -4176,7 +4176,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()
@@ -4304,7 +4304,7 @@ def plot_loss_curves(history, test_loss_value):
     plt.plot(test_losses, label='Testing Loss', color='green', linewidth=2, marker='s')
 
     # Title and labels
-    plt.title('Phytosense: Loss vs. Epoch', fontsize=20, fontweight='bold')
+    plt.title('VrikshVed: Loss vs. Epoch', fontsize=20, fontweight='bold')
     plt.xlabel('Epoch', fontsize=16)
     plt.ylabel('Loss', fontsize=16)
 
@@ -4597,7 +4597,7 @@ def plot_metrics_per_leaf(class_names, accuracy, precision, recall, f1_score):
     plt.xticks(x, class_names, rotation=90, fontsize=10)
     plt.xlabel('Leaf Type', fontsize=14)
     plt.ylabel('Score', fontsize=14)
-    plt.title('Phytosense: Metrics per Leaf Type', fontsize=16)
+    plt.title('VrikshVed: Metrics per Leaf Type', fontsize=16)
     plt.legend(fontsize=12)
     plt.grid(True)
     plt.tight_layout()

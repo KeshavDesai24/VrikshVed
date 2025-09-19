@@ -1,5 +1,5 @@
 ---
-title: Phytosense
+title: VrikshVed
 emoji: 👀
 colorFrom: indigo
 colorTo: blue

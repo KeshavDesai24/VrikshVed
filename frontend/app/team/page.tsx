@@ -29,7 +29,7 @@ const skillStyles = [
 const teamMembers = [
   {
     name: 'Keshav Desai',
-    image: 'https://i.ibb.co/4wMSJbcJ/litchu.png', 
+    image: '', 
     about: 'BACKEND DEV & ML ENGINEER',
     skills: ['PYTHON', 'FLASK', 'AI/ML', 'HUGGING FACE', 'FIREBASE', 'API'],
     contribution: 'Developed the entire Backend while Researching & contributing to multiple Model Training.',
