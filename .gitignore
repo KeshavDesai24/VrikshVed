@@ -1,0 +1,36 @@
+# ---- Node.js ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+*.pdb
+# Virtual environments
+venv/
+Vriksh/        # ignore your custom virtual env folder
+.env/
+.venv/
+ENV/
+env/
+venv.bak/
+
+# ---- Common IDE/OS files ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
