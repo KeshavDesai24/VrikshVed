@@ -36,8 +36,8 @@ export async function POST(request: Request) {
     **## Monitoring Guide**
     [Checklist for early detection and progression tracking]
     
-    **## Case Studies** 
-    [2-3 brief real-world examples with successful management]
+    **## Fertilizers and Pesticides** 
+    [Mention 2-3 Fertilizers and Pesticides based on plant disease]
     
     Format using markdown with emoji section headers. Use simple language for farmers. Highlight confidence-related uncertainties. Include metric/imperial units and evth..` 
 
