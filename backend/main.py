@@ -1,6 +1,6 @@
 from fastapi import FastAPI # type: ignore
 from fastapi.middleware.cors import CORSMiddleware # type: ignore
-from api.predict import router as predict_router
+from backend.api.predict import router as predict_router
 
 app = FastAPI(title="Plant Disease Detection API")
 
