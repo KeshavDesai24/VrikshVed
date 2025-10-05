@@ -23,6 +23,7 @@ build/
 venv/
 Vriksh/        # ignore your custom virtual env folder
 .env/
+.env
 .venv/
 ENV/
 env/
