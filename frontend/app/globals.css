@@ -1,11 +1,88 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&family=Geist+Mono:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&family=Geist+Mono:wght@400;600;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: var(--font-geist-sans), sans-serif;
+}
+
+/* Hide Google Translate top banner */
+body .goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Hide Google Translate top bar */
+.goog-te-banner-frame.skiptranslate,
+body > .goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Remove iframe offset added by Google Translate */
+body {
+  top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Optional: hide the floating Google Translate widget */
+.goog-te-gadget {
+  display: none !important;
+}
+/* Hide Google Translate top bar */
+.goog-te-banner-frame.skiptranslate,
+body > .goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Remove iframe offset added by Google Translate */
+body {
+  top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Optional: hide the floating Google Translate widget */
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* Hide Google Translate UI completely */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon,
+.goog-te-gadget-simple img,
+.goog-te-menu-value span,
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-menu-frame,
+#goog-gt-tt,
+.goog-te-banner,
+.goog-tooltip,
+iframe.goog-te-banner-frame,
+.goog-te-balloon-frame,
+.goog-te-menu2 {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+/* Prevent body shifting when Google adds its frame */
+body {
+  top: 0px !important;
+}
+
+/* Hide the gray top bar Google adds */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Remove Google Translate’s added padding/margin */
+body {
+  position: static !important;
+}
+
+/* Optional: Hide “powered by Google” tooltip */
+.goog-tooltip {
+  display: none !important;
 }
 
 * {
@@ -42,7 +119,7 @@ body {
   .navbar-transition {
     @apply transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)];
   }
-  
+
   /* Global content padding */
   .content-padding {
     @apply pt-24 px-4 sm:px-6 lg:px-8;
@@ -54,8 +131,13 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 .animate-float {
@@ -63,18 +145,21 @@ body {
 }
 
 .shadow-glass {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
 }
 
 .border-glass {
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
-
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .animate-float {
@@ -82,9 +167,15 @@ body {
 }
 
 @keyframes blob {
-  0% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
-  50% { border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; }
-  100% { border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 .animate-blob {
@@ -92,16 +183,18 @@ body {
   -webkit-animation: blob 7s ease-in-out infinite;
 }
 
-
 @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animateSpinSlow {
   animation: spin-slow 20s linear infinite;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -112,19 +205,15 @@ body {
   min-height: 100vh;
 }
 
-
 /* globals.css */
 .model-launcher-transition {
-  transition: 
-    width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    height 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.2s ease;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s ease;
 }
 
 .drag-constraint {
   touch-action: none;
 }
-
 
 /* Prevent layout shift */
 body {
@@ -138,7 +227,6 @@ body {
   pointer-events: auto !important;
 }
 
-
 .model-launcher {
   touch-action: none; /* Prevent browser interference */
 }
@@ -150,7 +238,7 @@ body {
 }
 
 .model-launcher .drag-hint {
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
   pointer-events: none;
 }
 
@@ -165,7 +253,6 @@ body {
   left: 20px; /* Adjust as needed */
   right: unset;
 }
-
 
 .model-launcher {
   touch-action: none; /* Prevent browser interference with dragging */
@@ -184,7 +271,7 @@ body {
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior: none;
   }
-  
+
   body {
     @apply overflow-x-hidden;
   }
